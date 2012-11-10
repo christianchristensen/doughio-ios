@@ -21,6 +21,12 @@
 		3BC609BE164ECC9B006487D9 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC609BC164ECC9B006487D9 /* AddressBookUI.framework */; };
 		3BC609C5164ECDC1006487D9 /* DIOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC609C2164ECDC1006487D9 /* DIOPerson.m */; };
 		3BC609C6164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC609C4164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m */; };
+		3BC60A08164EFB70006487D9 /* DIOFrontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC60A07164EFB70006487D9 /* DIOFrontViewController.m */; };
+		3BC60A0F164EFD79006487D9 /* success_kid.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC60A0E164EFD79006487D9 /* success_kid.png */; };
+		3BC60A11164EFEFD006487D9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC60A10164EFEFD006487D9 /* Default.png */; };
+		3BC60A13164EFFBE006487D9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC60A12164EFFBE006487D9 /* Default@2x.png */; };
+		3BC60A15164EFFC5006487D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC60A14164EFFC5006487D9 /* Default-568h@2x.png */; };
+		3BC60A18164F0185006487D9 /* DIOFront.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC60A17164F0185006487D9 /* DIOFront.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +50,14 @@
 		3BC609C2164ECDC1006487D9 /* DIOPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOPerson.m; sourceTree = "<group>"; };
 		3BC609C3164ECDC1006487D9 /* DIOSelectedContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSelectedContactsTableViewController.h; sourceTree = "<group>"; };
 		3BC609C4164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSelectedContactsTableViewController.m; sourceTree = "<group>"; };
+		3BC60A06164EFB70006487D9 /* DIOFrontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOFrontViewController.h; sourceTree = "<group>"; };
+		3BC60A07164EFB70006487D9 /* DIOFrontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOFrontViewController.m; sourceTree = "<group>"; };
+		3BC60A0E164EFD79006487D9 /* success_kid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = success_kid.png; sourceTree = "<group>"; };
+		3BC60A10164EFEFD006487D9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3BC60A12164EFFBE006487D9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3BC60A14164EFFC5006487D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3BC60A16164F0185006487D9 /* DIOFront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOFront.h; sourceTree = "<group>"; };
+		3BC60A17164F0185006487D9 /* DIOFront.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOFront.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +79,9 @@
 		3BC60989164ECB1D006487D9 = {
 			isa = PBXGroup;
 			children = (
-				3BC609BB164ECC9B006487D9 /* AddressBook.framework */,
-				3BC609BC164ECC9B006487D9 /* AddressBookUI.framework */,
+				3BC60A14164EFFC5006487D9 /* Default-568h@2x.png */,
+				3BC60A12164EFFBE006487D9 /* Default@2x.png */,
+				3BC60A10164EFEFD006487D9 /* Default.png */,
 				3BC6099E164ECB1D006487D9 /* DoughIO */,
 				3BC60997164ECB1D006487D9 /* Frameworks */,
 				3BC60995164ECB1D006487D9 /* Products */,
@@ -84,6 +99,8 @@
 		3BC60997164ECB1D006487D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3BC609BB164ECC9B006487D9 /* AddressBook.framework */,
+				3BC609BC164ECC9B006487D9 /* AddressBookUI.framework */,
 				3BC60998164ECB1D006487D9 /* UIKit.framework */,
 				3BC6099A164ECB1D006487D9 /* Foundation.framework */,
 				3BC6099C164ECB1D006487D9 /* CoreGraphics.framework */,
@@ -99,6 +116,7 @@
 				3BC609BF164ECCAA006487D9 /* Models */,
 				3BC609C0164ECCB0006487D9 /* Controllers */,
 				3BC609B0164ECB1D006487D9 /* MainStoryboard.storyboard */,
+				3BC60A09164EFD19006487D9 /* images */,
 				3BC6099F164ECB1D006487D9 /* Supporting Files */,
 			);
 			path = DoughIO;
@@ -123,6 +141,8 @@
 			children = (
 				3BC609C1164ECDC1006487D9 /* DIOPerson.h */,
 				3BC609C2164ECDC1006487D9 /* DIOPerson.m */,
+				3BC60A16164F0185006487D9 /* DIOFront.h */,
+				3BC60A17164F0185006487D9 /* DIOFront.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -130,10 +150,20 @@
 		3BC609C0164ECCB0006487D9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3BC60A06164EFB70006487D9 /* DIOFrontViewController.h */,
+				3BC60A07164EFB70006487D9 /* DIOFrontViewController.m */,
 				3BC609C3164ECDC1006487D9 /* DIOSelectedContactsTableViewController.h */,
 				3BC609C4164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3BC60A09164EFD19006487D9 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3BC60A0E164EFD79006487D9 /* success_kid.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +223,10 @@
 				3BC609AD164ECB1D006487D9 /* Default@2x.png in Resources */,
 				3BC609AF164ECB1D006487D9 /* Default-568h@2x.png in Resources */,
 				3BC609B2164ECB1D006487D9 /* MainStoryboard.storyboard in Resources */,
+				3BC60A0F164EFD79006487D9 /* success_kid.png in Resources */,
+				3BC60A11164EFEFD006487D9 /* Default.png in Resources */,
+				3BC60A13164EFFBE006487D9 /* Default@2x.png in Resources */,
+				3BC60A15164EFFC5006487D9 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +241,8 @@
 				3BC609A9164ECB1D006487D9 /* DIOAppDelegate.m in Sources */,
 				3BC609C5164ECDC1006487D9 /* DIOPerson.m in Sources */,
 				3BC609C6164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m in Sources */,
+				3BC60A08164EFB70006487D9 /* DIOFrontViewController.m in Sources */,
+				3BC60A18164F0185006487D9 /* DIOFront.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

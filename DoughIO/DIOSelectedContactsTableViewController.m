@@ -25,6 +25,7 @@
     return self;
 }
 
+
 - (void)ABPeoplePickerNavigationController:(ABPeoplePickerNavigationController*)peopleNavController didFinishAddingPerson:(DIOPerson *)contact {
   int newRowIndex = [self.people count];
   [self.people addObject:contact];
