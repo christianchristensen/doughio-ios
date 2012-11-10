@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AddressBook/AddressBook.h>
+#import <AddressBookUI/AddressBookUI.h>
 
 @interface DIOAppDelegate : UIResponder <UIApplicationDelegate>
 

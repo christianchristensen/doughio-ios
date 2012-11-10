@@ -17,7 +17,10 @@
 		3BC609AD164ECB1D006487D9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC609AC164ECB1D006487D9 /* Default@2x.png */; };
 		3BC609AF164ECB1D006487D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC609AE164ECB1D006487D9 /* Default-568h@2x.png */; };
 		3BC609B2164ECB1D006487D9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC609B0164ECB1D006487D9 /* MainStoryboard.storyboard */; };
-		3BC609B5164ECB1D006487D9 /* DIOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC609B4164ECB1D006487D9 /* DIOViewController.m */; };
+		3BC609BD164ECC9B006487D9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC609BB164ECC9B006487D9 /* AddressBook.framework */; };
+		3BC609BE164ECC9B006487D9 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BC609BC164ECC9B006487D9 /* AddressBookUI.framework */; };
+		3BC609C5164ECDC1006487D9 /* DIOPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC609C2164ECDC1006487D9 /* DIOPerson.m */; };
+		3BC609C6164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC609C4164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +38,12 @@
 		3BC609AC164ECB1D006487D9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		3BC609AE164ECB1D006487D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3BC609B1164ECB1D006487D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		3BC609B3164ECB1D006487D9 /* DIOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DIOViewController.h; sourceTree = "<group>"; };
-		3BC609B4164ECB1D006487D9 /* DIOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DIOViewController.m; sourceTree = "<group>"; };
+		3BC609BB164ECC9B006487D9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3BC609BC164ECC9B006487D9 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		3BC609C1164ECDC1006487D9 /* DIOPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOPerson.h; sourceTree = "<group>"; };
+		3BC609C2164ECDC1006487D9 /* DIOPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOPerson.m; sourceTree = "<group>"; };
+		3BC609C3164ECDC1006487D9 /* DIOSelectedContactsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOSelectedContactsTableViewController.h; sourceTree = "<group>"; };
+		3BC609C4164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOSelectedContactsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC609BD164ECC9B006487D9 /* AddressBook.framework in Frameworks */,
+				3BC609BE164ECC9B006487D9 /* AddressBookUI.framework in Frameworks */,
 				3BC60999164ECB1D006487D9 /* UIKit.framework in Frameworks */,
 				3BC6099B164ECB1D006487D9 /* Foundation.framework in Frameworks */,
 				3BC6099D164ECB1D006487D9 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +65,8 @@
 		3BC60989164ECB1D006487D9 = {
 			isa = PBXGroup;
 			children = (
+				3BC609BB164ECC9B006487D9 /* AddressBook.framework */,
+				3BC609BC164ECC9B006487D9 /* AddressBookUI.framework */,
 				3BC6099E164ECB1D006487D9 /* DoughIO */,
 				3BC60997164ECB1D006487D9 /* Frameworks */,
 				3BC60995164ECB1D006487D9 /* Products */,
@@ -85,9 +96,9 @@
 			children = (
 				3BC609A7164ECB1D006487D9 /* DIOAppDelegate.h */,
 				3BC609A8164ECB1D006487D9 /* DIOAppDelegate.m */,
+				3BC609BF164ECCAA006487D9 /* Models */,
+				3BC609C0164ECCB0006487D9 /* Controllers */,
 				3BC609B0164ECB1D006487D9 /* MainStoryboard.storyboard */,
-				3BC609B3164ECB1D006487D9 /* DIOViewController.h */,
-				3BC609B4164ECB1D006487D9 /* DIOViewController.m */,
 				3BC6099F164ECB1D006487D9 /* Supporting Files */,
 			);
 			path = DoughIO;
@@ -105,6 +116,24 @@
 				3BC609AE164ECB1D006487D9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3BC609BF164ECCAA006487D9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BC609C1164ECDC1006487D9 /* DIOPerson.h */,
+				3BC609C2164ECDC1006487D9 /* DIOPerson.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3BC609C0164ECCB0006487D9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3BC609C3164ECDC1006487D9 /* DIOSelectedContactsTableViewController.h */,
+				3BC609C4164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +205,8 @@
 			files = (
 				3BC609A5164ECB1D006487D9 /* main.m in Sources */,
 				3BC609A9164ECB1D006487D9 /* DIOAppDelegate.m in Sources */,
-				3BC609B5164ECB1D006487D9 /* DIOViewController.m in Sources */,
+				3BC609C5164ECDC1006487D9 /* DIOPerson.m in Sources */,
+				3BC609C6164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
