@@ -15,5 +15,4 @@
 @property (strong, nonatomic) IBOutlet UILabel *topLabel;
 @property (strong, nonatomic) IBOutlet UILabel *bottomLabel;
 
-
 @end

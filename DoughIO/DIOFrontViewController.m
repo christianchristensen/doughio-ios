@@ -8,6 +8,7 @@
 
 #import "DIOFrontViewController.h"
 #import "DIOFront.h"
+#import "DIOSelectedContactsTableViewController.h"
 
 @interface DIOFrontViewController ()
 
@@ -15,6 +16,10 @@
 
 @implementation DIOFrontViewController
 NSArray *fronts;
+
+-(void)goToContactEntry {
+  [self performSegueWithIdentifier:@"frontToContact" sender:self];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -51,6 +56,13 @@ NSArray *fronts;
     [alert setAlertViewStyle:UIAlertViewStylePlainTextInput];
     [alert show];
   }
+  else {
+    [NSTimer scheduledTimerWithTimeInterval:5
+                                     target:self
+                                   selector:@selector(goToContactEntry)
+                                   userInfo:nil
+                                    repeats:NO];
+  }
   
 	// Do any additional setup after loading the view.
 }
@@ -80,10 +92,17 @@ NSArray *fronts;
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
   NSString *phoneNum = [[alertView textFieldAtIndex:0] text];
   [defaults setObject:phoneNum forKey:kUserPhoneNumberKey];
+  [defaults synchronize];
+  [self goToContactEntry];
 }
 
-- (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex {
-  
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  if([segue.identifier isEqualToString:@"frontToContact"])
+  {
+    DIOSelectedContactsTableViewController *selectContacts = segue.destinationViewController;
+  }
 }
+
 
 @end
