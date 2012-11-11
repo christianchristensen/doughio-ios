@@ -27,6 +27,7 @@
 		3BC60A13164EFFBE006487D9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC60A12164EFFBE006487D9 /* Default@2x.png */; };
 		3BC60A15164EFFC5006487D9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BC60A14164EFFC5006487D9 /* Default-568h@2x.png */; };
 		3BC60A18164F0185006487D9 /* DIOFront.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC60A17164F0185006487D9 /* DIOFront.m */; };
+		3BC60A65164F2506006487D9 /* DIOMainWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BC60A64164F2506006487D9 /* DIOMainWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,8 @@
 		3BC60A14164EFFC5006487D9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3BC60A16164F0185006487D9 /* DIOFront.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOFront.h; sourceTree = "<group>"; };
 		3BC60A17164F0185006487D9 /* DIOFront.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOFront.m; sourceTree = "<group>"; };
+		3BC60A63164F2506006487D9 /* DIOMainWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIOMainWebViewController.h; sourceTree = "<group>"; };
+		3BC60A64164F2506006487D9 /* DIOMainWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIOMainWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				3BC60A07164EFB70006487D9 /* DIOFrontViewController.m */,
 				3BC609C3164ECDC1006487D9 /* DIOSelectedContactsTableViewController.h */,
 				3BC609C4164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m */,
+				3BC60A63164F2506006487D9 /* DIOMainWebViewController.h */,
+				3BC60A64164F2506006487D9 /* DIOMainWebViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 				3BC609C6164ECDC1006487D9 /* DIOSelectedContactsTableViewController.m in Sources */,
 				3BC60A08164EFB70006487D9 /* DIOFrontViewController.m in Sources */,
 				3BC60A18164F0185006487D9 /* DIOFront.m in Sources */,
+				3BC60A65164F2506006487D9 /* DIOMainWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

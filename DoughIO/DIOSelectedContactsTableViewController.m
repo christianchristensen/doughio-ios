@@ -8,6 +8,7 @@
 
 #import "DIOSelectedContactsTableViewController.h"
 #import "DIOPerson.h"
+#import "DIOMainWebViewController.h"
 
 @interface DIOSelectedContactsTableViewController ()
 
@@ -202,6 +203,18 @@
 {
 	//[self dismissModalViewControllerAnimated:YES];
   [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+  if([segue.identifier isEqualToString:@"contactSelectToWebView"])
+  {
+    DIOMainWebViewController *selectContacts = segue.destinationViewController;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *ownNumber = [defaults objectForKey:kUserPhoneNumberKey];
+    selectContacts.contacts = self.people;
+    selectContacts.ownNumber = ownNumber;
+  }
 }
 
 @end

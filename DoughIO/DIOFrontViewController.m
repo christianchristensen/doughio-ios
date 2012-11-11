@@ -57,7 +57,7 @@ NSArray *fronts;
     [alert show];
   }
   else {
-    [NSTimer scheduledTimerWithTimeInterval:5
+    [NSTimer scheduledTimerWithTimeInterval:0.05
                                      target:self
                                    selector:@selector(goToContactEntry)
                                    userInfo:nil
